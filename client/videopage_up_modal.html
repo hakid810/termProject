@@ -1,19 +1,27 @@
-<template name="vi_modal">
-    <div class="modal fade">
+<template name="viModal">
+    <div class="modal fade" id="viModal" tabindex="-1" role="dialog" aria-labelledby="viModelLabel" aria-hidden="true">
         <div class="modal-dialog">
+            <form class="form-inline">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header"> <!-- title -->
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Modal title</h4>
+                    <h4 class="modal-title" ><input id="inpViTitle" type="text" class="form-control" placeholder="제목을 입력하세요"></h4>
                 </div>
                 <div class="modal-body">
-                    <p>One fine body&hellip;</p>
+
+                        <!-- 본문 -->
+
+                        <hr/>
+                        <input id="inpViVi" type="text" class="form-control" placeholder="동영상의 소스코드를 입력해주세요">
+                        <hr/>
+                        <textarea id="inpViText" class="form-control" rows="3" placeholder="내용을 입력해주세요"></textarea>
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" id="btnViCom">게시글 작성</button>
                 </div>
             </div><!-- /.modal-content -->
+            </form>
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 </template>
