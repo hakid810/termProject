@@ -7,7 +7,7 @@ Template.viModal.events({
         }
 
         var obj = {};
-        //obj.inpUser = 사용자 id받아오기
+        obj.inpUser = Meteor.user().emails[0].address;
         obj.inpViTitle = $('#inpViTitle').val();
         obj.inpViVi = $('#inpViVi').val();
         obj.inpViText = $('#inpViText').val();
