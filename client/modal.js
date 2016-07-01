@@ -1,7 +1,7 @@
 Template.modal.events({
-    'click #btncmt' : function(evt,tmpl){
+    'click #btnrp' : function(evt,tmpl){
         evt.preventDefault();
 
-        var comment = $('#btncmt').val();
+        // var comment = $('#btnrp').val();
     }
 })
